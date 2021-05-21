@@ -124,39 +124,4 @@
       });
     </script>
   </body>
-<body>
-<div class="center">
-	<div class="ct-btn">
-                <button id="clickBtn" class="border-neon">Fav Video</button>
-            </div>
-    <video id="myVideo">
-        <source id="videoSource" src="../../../ax/MVI_7226.MOV" type="video/mp4">
-        Sorry, your browser does not support HTML5 video.
-    </video>
-</div>
-    <script>
-        // address of some videos
-        var fileNames = [
-		"http://192.168.68.110:8080/api/raw/favs/hard_times.mp4?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyLCJsb2NhbGUiOiJlbiIsInZpZXdNb2RlIjoibW9zYWljIiwic2luZ2xlQ2xpY2siOmZhbHNlLCJwZXJtIjp7ImFkbWluIjp0cnVlLCJleGVjdXRlIjp0cnVlLCJjcmVhdGUiOnRydWUsInJlbmFtZSI6dHJ1ZSwibW9kaWZ5Ijp0cnVlLCJkZWxldGUiOnRydWUsInNoYXJlIjp0cnVlLCJkb3dubG9hZCI6dHJ1ZX0sImNvbW1hbmRzIjpbXSwibG9ja1Bhc3N3b3JkIjpmYWxzZSwiaGlkZURvdGZpbGVzIjpmYWxzZX0sImV4cCI6MTYyMTQ2ODAyNSwiaWF0IjoxNjIxNDYwODI1LCJpc3MiOiJGaWxlIEJyb3dzZXIifQ.7WFlx_2IsXO2C6NMoJ7ebdHSWh4exlwp2tba3IMA69Y&k=1621432991293&inline=true",
-		"http://192.168.68.110:8080/api/raw/favs/video0-244.mp4?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyLCJsb2NhbGUiOiJlbiIsInZpZXdNb2RlIjoibW9zYWljIiwic2luZ2xlQ2xpY2siOmZhbHNlLCJwZXJtIjp7ImFkbWluIjp0cnVlLCJleGVjdXRlIjp0cnVlLCJjcmVhdGUiOnRydWUsInJlbmFtZSI6dHJ1ZSwibW9kaWZ5Ijp0cnVlLCJkZWxldGUiOnRydWUsInNoYXJlIjp0cnVlLCJkb3dubG9hZCI6dHJ1ZX0sImNvbW1hbmRzIjpbXSwibG9ja1Bhc3N3b3JkIjpmYWxzZSwiaGlkZURvdGZpbGVzIjpmYWxzZX0sImV4cCI6MTYyMTQ2ODE2NywiaWF0IjoxNjIxNDYwOTY3LCJpc3MiOiJGaWxlIEJyb3dzZXIifQ.845a23UZEOc1iIXq_ifMpVS2sSo1CrgXOOozjC5l8dE&k=1621432987426&inline=true",
-		"http://192.168.68.110:8080/api/raw/favs/2_gigs_of_ram.mp4?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyLCJsb2NhbGUiOiJlbiIsInZpZXdNb2RlIjoibW9zYWljIiwic2luZ2xlQ2xpY2siOmZhbHNlLCJwZXJtIjp7ImFkbWluIjp0cnVlLCJleGVjdXRlIjp0cnVlLCJjcmVhdGUiOnRydWUsInJlbmFtZSI6dHJ1ZSwibW9kaWZ5Ijp0cnVlLCJkZWxldGUiOnRydWUsInNoYXJlIjp0cnVlLCJkb3dubG9hZCI6dHJ1ZX0sImNvbW1hbmRzIjpbXSwibG9ja1Bhc3N3b3JkIjpmYWxzZSwiaGlkZURvdGZpbGVzIjpmYWxzZX0sImV4cCI6MTYyMTQ2ODE2NywiaWF0IjoxNjIxNDYwOTY3LCJpc3MiOiJGaWxlIEJyb3dzZXIifQ.845a23UZEOc1iIXq_ifMpVS2sSo1CrgXOOozjC5l8dE&k=1621432987940&inline=true",
-		"http://192.168.68.110:8080/api/raw/favs/video0_81.mp4?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyLCJsb2NhbGUiOiJlbiIsInZpZXdNb2RlIjoibW9zYWljIiwic2luZ2xlQ2xpY2siOmZhbHNlLCJwZXJtIjp7ImFkbWluIjp0cnVlLCJleGVjdXRlIjp0cnVlLCJjcmVhdGUiOnRydWUsInJlbmFtZSI6dHJ1ZSwibW9kaWZ5Ijp0cnVlLCJkZWxldGUiOnRydWUsInNoYXJlIjp0cnVlLCJkb3dubG9hZCI6dHJ1ZX0sImNvbW1hbmRzIjpbXSwibG9ja1Bhc3N3b3JkIjpmYWxzZSwiaGlkZURvdGZpbGVzIjpmYWxzZX0sImV4cCI6MTYyMTQ2ODE2NywiaWF0IjoxNjIxNDYwOTY3LCJpc3MiOiJGaWxlIEJyb3dzZXIifQ.845a23UZEOc1iIXq_ifMpVS2sSo1CrgXOOozjC5l8dE&k=1621432989510&inline=true",
-		"http://192.168.68.110:8080/api/raw/favs/video0-32_3_1.mp4?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyLCJsb2NhbGUiOiJlbiIsInZpZXdNb2RlIjoibW9zYWljIiwic2luZ2xlQ2xpY2siOmZhbHNlLCJwZXJtIjp7ImFkbWluIjp0cnVlLCJleGVjdXRlIjp0cnVlLCJjcmVhdGUiOnRydWUsInJlbmFtZSI6dHJ1ZSwibW9kaWZ5Ijp0cnVlLCJkZWxldGUiOnRydWUsInNoYXJlIjp0cnVlLCJkb3dubG9hZCI6dHJ1ZX0sImNvbW1hbmRzIjpbXSwibG9ja1Bhc3N3b3JkIjpmYWxzZSwiaGlkZURvdGZpbGVzIjpmYWxzZX0sImV4cCI6MTYyMTQ2ODE2NywiaWF0IjoxNjIxNDYwOTY3LCJpc3MiOiJGaWxlIEJyb3dzZXIifQ.845a23UZEOc1iIXq_ifMpVS2sSo1CrgXOOozjC5l8dE&k=1621432990043&inline=true",
-		"http://192.168.68.110:8080/api/raw/favs/My_Best_Friend_Headcrab.mp4?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyLCJsb2NhbGUiOiJlbiIsInZpZXdNb2RlIjoibW9zYWljIiwic2luZ2xlQ2xpY2siOmZhbHNlLCJwZXJtIjp7ImFkbWluIjp0cnVlLCJleGVjdXRlIjp0cnVlLCJjcmVhdGUiOnRydWUsInJlbmFtZSI6dHJ1ZSwibW9kaWZ5Ijp0cnVlLCJkZWxldGUiOnRydWUsInNoYXJlIjp0cnVlLCJkb3dubG9hZCI6dHJ1ZX0sImNvbW1hbmRzIjpbXSwibG9ja1Bhc3N3b3JkIjpmYWxzZSwiaGlkZURvdGZpbGVzIjpmYWxzZX0sImV4cCI6MTYyMTQ2ODE2NywiaWF0IjoxNjIxNDYwOTY3LCJpc3MiOiJGaWxlIEJyb3dzZXIifQ.845a23UZEOc1iIXq_ifMpVS2sSo1CrgXOOozjC5l8dE&k=1621432993833&inline=true",
-		"http://192.168.68.110:8080/api/raw/favs/MRCADER_ADVENTURE.mp4?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyLCJsb2NhbGUiOiJlbiIsInZpZXdNb2RlIjoibW9zYWljIiwic2luZ2xlQ2xpY2siOmZhbHNlLCJwZXJtIjp7ImFkbWluIjp0cnVlLCJleGVjdXRlIjp0cnVlLCJjcmVhdGUiOnRydWUsInJlbmFtZSI6dHJ1ZSwibW9kaWZ5Ijp0cnVlLCJkZWxldGUiOnRydWUsInNoYXJlIjp0cnVlLCJkb3dubG9hZCI6dHJ1ZX0sImNvbW1hbmRzIjpbXSwibG9ja1Bhc3N3b3JkIjpmYWxzZSwiaGlkZURvdGZpbGVzIjpmYWxzZX0sImV4cCI6MTYyMTQ2ODE2NywiaWF0IjoxNjIxNDYwOTY3LCJpc3MiOiJGaWxlIEJyb3dzZXIifQ.845a23UZEOc1iIXq_ifMpVS2sSo1CrgXOOozjC5l8dE&k=1621433004340&inline=true",			
-		];
-        
-        // click to pick a random video and play
-        document.getElementById("clickBtn").addEventListener("click", function() {
-            document.getElementById("myVideo").pause();
-            
-            var rndm = Math.floor(Math.random() * 7);
-            console.log(rndm);
-            document.getElementById("videoSource").setAttribute("src", fileNames[rndm]);
-            document.getElementById("myVideo").load();
-            document.getElementById("myVideo").play();
-        });
-
-    </script>
-</body>
 </html>

@@ -1,0 +1,57 @@
+<!-- Container -->
+<div class="container">
+  <div class="inner-wrapper">
+    <!-- Controller Row -->
+    <div class="controller-row">
+      <label class="switch">
+        <input id="toggler" type="checkbox">
+        <span class="slider round"></span>
+      </label>
+    </div><!-- End of controller row -->
+    <!-- Card -->
+    <div class="card">
+      <div class="card__header">
+        <h2 class="__title">Card Title</h2>
+      </div>
+      <div class="card__body">
+        <p class="__detail">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        </p>
+      </div>
+    </div><!-- End of card -->
+  </div>
+</div><!-- End of container-->
+<style>
+  .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  // Bind the toggle background color (unchecked) to the '--switch-off-color' variable
+  background-color: var(--switch-off-color);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  bottom: 4px;
+  // Bind the toggle inner circle color to the '--toggler-color' variable
+  background-color: var(--toggler-color);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+input:checked + .slider {
+  // Bind the toggle background color (checked) to the '--switch-on-color' variable
+  background-color: var(--switch-on-color);
+}
+input:focus + .slider {
+  // Bind the toggle box shadow color to the '--switch-on-color' variable
+  box-shadow: 0 0 1px var(--switch-on-color);
+}
+  <syle/>

@@ -1,5 +1,5 @@
 User-agent: *
-Disallow: /
+Allow: /
 
 User-agent: googlebot
 User-agent: Googlebot-Video

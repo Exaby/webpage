@@ -4,6 +4,7 @@ const bookmarks = [
     title: "Daily",
     links: [
       { name: "Inbox", url: "https://inbox.google.com" },
+      { name: "Drive", url: "https://cloud.spco.xyz/" },
     ],
   },
   {
@@ -24,6 +25,7 @@ const bookmarks = [
   {
     title: "Misc",
     links: [
+      { name: "SR Wiki", url: "https://sunrust.org" },
       { name: "GitHub", url: "https://github.com" },
     ],
   },

@@ -1,0 +1,16 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this file,
+ * You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+
+  /* N.B.: Remember to update ImageDocument.css in the tree or reftests may fail! */
+
+  body {
+    color: #eee;
+    background-image: url("https://cdn.spco.xyz/assets/img/imagedoc-darknoise.png");
+  }
+
+  img.transparent {
+    background: hsl(0,0%,90%) url("https://cdn.spco.xyz/assets/img/imagedoc-darknoise.png");
+    color: #222;
+  }

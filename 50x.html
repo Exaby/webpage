@@ -1,29 +1,30 @@
 <html>
     <head>
-        <link rel="shortcut icon" href="https://cdn.spco.xyz/assets/img/404.png">
         <title>404 Not Found</title>
         <meta name="description" content="404 Not Found">
+        <link rel="shortcut icon" href="https://cdn.spco.xyz/favicon.png">
         <style>
+            @font-face {
+	        font-family: 'Heebo';
+            src: url('https://spco.xyz/fonts/Heebo-Regular.ttf') format('truetype');
+            }
             body {
               background-image: url("https://cdn.spco.xyz/assets/img/imagedoc-darknoise.png");
               background-color: rgb(33,33,33); /* Average color of that ^ image. */
             }
-            p{
-                color:rgb(255, 255, 255)
-            }
-            h1{
-                color:rgb(255, 255, 255)
-            }
-                    </style>
+            .sp-404 {
+                color:rgb(255, 255, 255);
+                text-align: center;
+                font-family: 'Heebo';
+                }
+            </style>
     </head>
 <body>
-<center>
-    <h1>404 Not Found</h1>
-</center>
-<center>
-    <p>
-        The File You Were Looking For Was Not Found On The Server :(
-    </p>
-</center>
+    <div class="sp-404">
+<h1>
+    Access Denied
+</h1>
+<p>nginx</p>
+</div>
 </body>
 </html>

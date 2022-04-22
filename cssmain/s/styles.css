@@ -1,0 +1,19 @@
+    @font-face {
+    font-family: 'Calibri';
+    src: url(https://spco.xyz/fonts/calibri-regular.ttf) format('truetype');
+    }
+
+    .topic {
+        font-family: 'Calibri', sans-serif;
+
+        }
+
+    .heading-1{
+        font-family: 'Calibri', sans-serif;
+        text-indent: 30px;
+        }
+        
+    .heading-2 {
+        font-family: 'Calibri', sans-serif;
+        text-indent: 60px;
+        }

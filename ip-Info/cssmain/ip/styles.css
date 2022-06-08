@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'Heebo';
+        src: url(https://spco.xyz/fonts/Heebo.woff2) format('woff2');
+    }
+
+@font-face {
+	font-family: 'Candara';
+        src: url('https://spco.xyz/fonts/Candara.ttf') format('truetype');
+    }
+
+	body {
+        background: rgb(23,23,23);
+        background: linear-gradient(52deg, rgba(23,23,23,1) 20%, rgba(49,17,70,1) 52%, rgba(64,0,106,1) 78%); 
+        margin: 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        }
+
+        .sp-topnav {
+            overflow: hidden;
+            background-image: url("https://cdn.spco.xyz/assets/img/imagedoc-darknoise.png");
+            background-color: rgba(8, 8, 8, 0.68);
+        }
+          
+        .sp-topnav a {
+            font-family: 'Heebo', sans-serif;
+            float: left;
+            color: #79c9ff;
+            text-shadow: 2px 2px #79c9ff18;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+          
+        .sp-topnav a:hover {
+            font-family: 'Heebo', sans-serif;
+            background-image: url("https://cdn.spco.xyz/assets/img/imagedoc-lightnoise.png");
+            background-color: rgb(218, 218, 218);
+            color: #223b4b;
+            text-shadow: 2px 2px #223b4b18;
+        }
+
+        .sp-title {
+            font-family: 'Candara';
+            color: #2a0ca0;
+            left: 0;
+            margin: auto;
+            margin-top: -100px;
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 500;
+            letter-spacing: 0.113em;
+            line-height: 0.1;
+        }
+        .sp-footer {
+            font-family: 'Heebo';
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            display: inline-block;
+            background-image: url("https://cdn.spco.xyz/assets/img/imagedoc-darknoise.png");
+            background-color: rgba(8, 8, 8, 0.68);
+            color: #79c9ff;
+            text-align: center;
+         }
+
+         .sp-footer p {
+            text-indent: 10px;
+            font-family: 'Heebo', sans-serif;
+            float: left;
+            color: #79c9ff;
+            text-shadow: 2px 2px #79c9ff18;
+            text-align: center;
+            padding: 0px 0px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .sp-footer a {
+            font-family: 'Heebo', sans-serif;
+            color: #7200b4;
+            text-align: center;
+            padding: 0px 0px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .sp-centered-content {
+            margin: auto;
+            margin-top: 0px;
+            position: absolute;
+            top: 30%;
+            width: 100%;
+            height: 60%;
+            text-align: center;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            letter-spacing: 0.113em;
+            line-height: 0.1;
+        }
+        .sp-title-header{
+            font-family: 'Heebo', sans-serif;
+            color: #2a0ca0;
+            left: 0;
+            margin: auto;
+            margin-top: -50px;
+            position: absolute;
+            top: 10%;
+            width: 100%;
+            text-align: center;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            letter-spacing: 0.113em;
+            line-height: 0.1;
+        }
+        .sp-ip-info {
+            padding-left: 30%;
+            color:#79c9ff;
+            text-align: left;
+            position: relative;
+            line-height: 1.5;
+            height: 60%;
+            top: 60px;
+            width: 60%;
+            margin: auto;
+            font-family: 'Heebo', sans-serif;
+        }

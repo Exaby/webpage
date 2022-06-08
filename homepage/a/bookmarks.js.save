@@ -1,3 +1,4 @@
+// Note: having length != 4 will mess with layout based on how the site is styled
 const bookmarks = [
   {
     title: "Daily",
@@ -12,7 +13,7 @@ const bookmarks = [
       { name: "Youtube", url: "https://youtube.com" },
       { name: "Netflix", url: "https://netflix.com" },
       { name: "Amazon Prime", url: "https://www.primevideo.com/" },
-      { name: "Disney Plus", url: "https://www.disneyplus.com/" },
+      { name: "Disney Plus", url: "https://www.disneyplus.com" },
     ],
   },
   {

@@ -23,6 +23,7 @@ body {
 }
 
 .sp-topnav {
+  position: sticky;
   overflow: hidden;
   background-image: url("https://cdn.spco.xyz/assets/img/imagedoc-darknoise.png");
   background-color: rgba(8, 8, 8, 0.68);
